@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".OpcionesActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_opciones_nota"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvNota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_nota"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"
+        tools:text="Nota: Este es el contenido de la nota de ejemplo."/>
+
+    <Button
+        android:id="@+id/btnCompartirCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/compartir_por_correo"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnEditarNuevo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/editar_de_nuevo"/>
+
+</LinearLayout>
