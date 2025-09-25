@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">PracticaComunicacion</string>
+
+    <string name="continuar">Continuar</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="volver_a_editar">Volver a editar</string>
+    <string name="compartir">Compartir</string>
+    <string name="compartir_por_correo">Compartir por correo</string>
+    <string name="editar_de_nuevo">Editar de nuevo</string>
+
+    <string name="titulo_formulario">Editor de Perfil</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_edad">Edad</string>
+    <string name="hint_ciudad">Ciudad</string>
+    <string name="hint_correo">Correo electrónico</string>
+    <string name="titulo_resumen">Resumen del Perfil</string>
+    <string name="label_nombre">Nombre:</string>
+    <string name="label_edad">Edad:</string>
+    <string name="label_ciudad">Ciudad:</string>
+    <string name="label_correo">Correo:</string>
+    <string name="toast_perfil_guardado">Perfil guardado correctamente</string>
+    <string name="error_campos_vacios">Por favor, complete todos los campos</string>
+
+    <string name="titulo_editor_nota">Editor de Nota Rápida</string>
+    <string name="hint_escribe_tu_nota">Escribe tu nota aquí…</string>
+    <string name="titulo_opciones_nota">Opciones de Nota</string>
+    <string name="label_nota">Nota:</string>
+    <string name="toast_compartido_correo">Compartido por correo</string>
+
+</resources>
