@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selecciona_tu_comida"
+        android:textSize="22sp"
+        android:layout_marginBottom="24dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgComida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbPizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pizza"/>
+
+        <RadioButton
+            android:id="@+id/rbHamburguesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hamburguesa"/>
+
+        <RadioButton
+            android:id="@+id/rbEnsalada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ensalada"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSiguienteComida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/siguiente"/>
+</LinearLayout>

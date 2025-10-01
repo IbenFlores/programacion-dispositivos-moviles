@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selecciona_tus_extras"
+        android:textSize="22sp"
+        android:layout_marginBottom="24dp"/>
+
+    <CheckBox
+        android:id="@+id/cbBebida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bebida"/>
+
+    <CheckBox
+        android:id="@+id/cbPapas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/papas_fritas"/>
+
+    <CheckBox
+        android:id="@+id/cbPostre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/postre"/>
+
+    <Button
+        android:id="@+id/btnSiguienteExtras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/siguiente"/>
+</LinearLayout>

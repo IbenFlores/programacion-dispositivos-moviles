@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">NavegacionPedidos</string>
+
+    <string name="bienvenido">Bienvenido al Configurador de Pedidos</string>
+    <string name="nuevo_pedido">Nuevo Pedido</string>
+
+    <string name="selecciona_tu_comida">1. Selecciona tu comida</string>
+    <string name="pizza">Pizza</string>
+    <string name="hamburguesa">Hamburguesa</string>
+    <string name="ensalada">Ensalada</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="error_selecciona_comida">Debes seleccionar una comida</string>
+
+    <string name="selecciona_tus_extras">2. Selecciona tus extras</string>
+    <string name="bebida">Bebida</string>
+    <string name="papas_fritas">Papas Fritas</string>
+    <string name="postre">Postre</string>
+
+    <string name="resumen_del_pedido">3. Resumen del Pedido</string>
+    <string name="comida_principal">Comida Principal:</string>
+    <string name="extras">Extras:</string>
+    <string name="confirmar_pedido">Confirmar Pedido</string>
+    <string name="editar_pedido">Editar Pedido</string>
+    <string name="pedido_confirmado">¡Pedido confirmado con éxito!</string>
+    <string name="sin_extras">Sin extras seleccionados</string>
+
 </resources>
