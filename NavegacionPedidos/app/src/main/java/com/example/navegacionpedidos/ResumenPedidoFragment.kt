@@ -21,7 +21,6 @@ import androidx.navigation.fragment.navArgs
  */
 class ResumenPedidoFragment : Fragment() {
 
-    // Recupera los argumentos de forma segura.
     private val args: ResumenPedidoFragmentArgs by navArgs()
 
     override fun onCreateView(
@@ -34,26 +33,22 @@ class ResumenPedidoFragment : Fragment() {
         val btnConfirmar: Button = view.findViewById(R.id.btnConfirmar)
         val btnEditar: Button = view.findViewById(R.id.btnEditar)
 
-        [cite_start]// Muestra los datos del pedido recibidos a través de los argumentos. [cite: 22]
         tvResumenComida.text = args.comidaSeleccionada
-        val extras = args.extrasSeleccionados.joinToString(separator = "\n")
+
+        val extras = args.extrasSeleccionados
         tvResumenExtras.text = if (extras.isNotEmpty()) extras else getString(R.string.sin_extras)
 
         btnConfirmar.setOnClickListener {
-            [cite_start]// Muestra un Toast y navega de vuelta al inicio. [cite: 24]
             Toast.makeText(context, getString(R.string.pedido_confirmado), Toast.LENGTH_LONG).show()
             findNavController().navigate(R.id.action_resumenPedidoFragment_to_inicioFragment)
         }
 
         btnEditar.setOnClickListener {
-            [cite_start]// Prepara un Bundle con los datos actuales del pedido. [cite: 27]
             val result = bundleOf(
                 "comida" to args.comidaSeleccionada,
                 "extras" to args.extrasSeleccionados
             )
-            [cite_start]// Envía el resultado al fragment anterior que esté escuchando. [cite: 27]
             setFragmentResult("requestKey", result)
-            [cite_start]// Regresa a la pantalla anterior en la pila de navegación. [cite: 28, 32]
             findNavController().popBackStack()
         }
 

@@ -18,7 +18,6 @@ import androidx.navigation.fragment.navArgs
  */
 class SeleccionExtrasFragment : Fragment() {
 
-    // Recupera los argumentos pasados desde el fragment anterior usando Safe Args.
     private val args: SeleccionExtrasFragmentArgs by navArgs()
 
     override fun onCreateView(
@@ -37,10 +36,11 @@ class SeleccionExtrasFragment : Fragment() {
             if (cbPapas.isChecked) extrasSeleccionados.add(cbPapas.text.toString())
             if (cbPostre.isChecked) extrasSeleccionados.add(cbPostre.text.toString())
 
-            [cite_start]// Usamos Safe Args para navegar y pasar tanto la comida como los extras. [cite: 18, 19]
+            val extrasComoString = extrasSeleccionados.joinToString(", ")
+
             val action = SeleccionExtrasFragmentDirections.actionSeleccionExtrasFragmentToResumenPedidoFragment(
                 comidaSeleccionada = args.comidaSeleccionada,
-                extrasSeleccionados = extrasSeleccionados.toTypedArray()
+                extrasSeleccionados = extrasComoString
             )
             findNavController().navigate(action)
         }

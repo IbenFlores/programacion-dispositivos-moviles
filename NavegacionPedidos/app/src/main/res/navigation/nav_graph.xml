@@ -50,6 +50,6 @@
             app:argType="string" />
         <argument
             android:name="extrasSeleccionados"
-            app:argType="string[]" />
+            app:argType="string" />
     </fragment>
 </navigation>

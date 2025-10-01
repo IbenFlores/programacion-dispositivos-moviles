@@ -24,7 +24,6 @@ class InicioFragment : Fragment() {
         val btnNuevoPedido: Button = view.findViewById(R.id.btnNuevoPedido)
 
         btnNuevoPedido.setOnClickListener {
-            [cite_start]// Navega a SeleccionComidaFragment usando la acción definida en nav_graph.xml. [cite: 9]
             findNavController().navigate(R.id.action_inicioFragment_to_seleccionComidaFragment)
         }
 

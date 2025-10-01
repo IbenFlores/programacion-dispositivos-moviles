@@ -9,7 +9,6 @@ import android.widget.Button
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.Toast
-import androidx.core.os.bundleOf
 import androidx.fragment.app.setFragmentResultListener
 import androidx.navigation.fragment.findNavController
 
@@ -23,14 +22,10 @@ class SeleccionComidaFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        [cite_start]// Escucha el resultado enviado desde ResumenPedidoFragment cuando se presiona "Editar". [cite: 28, 31]
         setFragmentResultListener("requestKey") { _, bundle ->
-            // Recupera los datos y los establece en la UI.
             val comida = bundle.getString("comida")
-            val extras = bundle.getStringArray("extras")
-
-            // Lógica para pre-seleccionar los RadioButton y CheckBox (no implementada aquí por brevedad)
-            // Esto es útil para que el usuario no pierda su selección al editar.
+            val extras = bundle.getString("extras")
+            // Aquí puedes agregar lógica para restaurar la selección si lo deseas
         }
     }
 
@@ -50,7 +45,6 @@ class SeleccionComidaFragment : Fragment() {
                 val selectedRadioButton: RadioButton = view.findViewById(selectedRadioButtonId)
                 val comidaSeleccionada = selectedRadioButton.text.toString()
 
-                [cite_start]// Usamos Safe Args para crear la acción y pasar los datos de forma segura. [cite: 13, 14, 29]
                 val action = SeleccionComidaFragmentDirections.actionSeleccionComidaFragmentToSeleccionExtrasFragment(comidaSeleccionada)
                 findNavController().navigate(action)
             }
